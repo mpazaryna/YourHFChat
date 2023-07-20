@@ -1,0 +1,12 @@
+# Ignore Streamlit build artifacts
+.streamlit-build
+
+# Ignore Streamlit temporary files
+.streamlit/
+
+# Ignore other files that you don't want to track
+*.ipynb_checkpoints
+*.pyc
+
+venv/
+config.py
