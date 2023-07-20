@@ -8,8 +8,11 @@ from huggingface_hub import InferenceClient
 from langchain import HuggingFaceHub
 
 # AVATARS
-av_us = "./man.png"  # "🦖"  #A single emoji, e.g. "🧑‍💻", "🤖", "🦖". Shortcodes are not supported.
-av_ass = "./robot.png"
+# av_us = "./man.png"  # "🦖"  #A single emoji, e.g. "🧑‍💻", "🤖", "🦖". Shortcodes are not supported.
+# av_ass = "./robot.png"
+# https://raw.githubusercontent.com/mpazaryna/YourHFChat/main/man.png
+# https://raw.githubusercontent.com/mpazaryna/YourHFChat/main/woman.png
+# https://raw.githubusercontent.com/mpazaryna/YourHFChat/main/robot.png
 
 
 # FUNCTION TO LOG ALL CHAT MESSAGES INTO chathistory.txt
@@ -66,10 +69,16 @@ if "messages" not in st.session_state:
 # Display chat messages from history on app rerun
 for message in st.session_state.messages:
     if message["role"] == "user":
-        with st.chat_message(message["role"], avatar=av_us):
+        with st.chat_message(
+            message["role"],
+            avatar="https://raw.githubusercontent.com/mpazaryna/YourHFChat/main/woman.png",
+        ):
             st.markdown(message["content"])
     else:
-        with st.chat_message(message["role"], avatar=av_ass):
+        with st.chat_message(
+            message["role"],
+            avatar="https://raw.githubusercontent.com/mpazaryna/YourHFChat/main/robot.png",
+        ):
             st.markdown(message["content"])
 
 # Accept user input
@@ -77,7 +86,10 @@ if myprompt := st.chat_input("What is an AI model?"):
     # Add user message to chat history
     st.session_state.messages.append({"role": "user", "content": myprompt})
     # Display user message in chat message container
-    with st.chat_message("user", avatar=av_us):
+    with st.chat_message(
+        "user",
+        avatar="https://raw.githubusercontent.com/mpazaryna/YourHFChat/main/woman.png",
+    ):
         st.markdown(myprompt)
         usertext = f"user: {myprompt}"
         writehistory(usertext)
