@@ -71,3 +71,10 @@ A hamburger is a sandwich consisting of one or more cooked patties of ground bee
 user: What is a bird?
 assistant: 
 A bird is a winged, bipedal, egg-laying vertebrate of the class Aves. Birds are adapted for flight, with a streamlined body, a keel on the sternum, and feathers. Most birds have a beak for food gathering and a sturdy, feathered skeleton for support. Their respiratory and circulatory systems are also adapted for flight, with a unique lung structure and a highly developed heart. Birds are found on every continent, except Antarctica, and in a wide range of habitats, from rainforests to arctic tundra. They are highly diverse in form and function, with over 10,000 species recognized, including penguins, ostriches, and hummingbirds. Birds are important members of ecosystems, as predators, scavengers, and pollinators, and have had a significant impact on human civilization through their role in the spread of diseases, as symbols, and as a source of food and feathers. 
+user: What is art and how can I learn it?
+user: what is art
+assistant: 
+what 
+user: what is art
+assistant: 
+Art is a diverse range of human activities in creating visual, auditory or performing artifacts, expressing the author's imaginative or technical skill, intended to be appreciated for their beauty or emotional power. 

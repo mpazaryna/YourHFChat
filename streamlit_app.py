@@ -7,13 +7,6 @@ import streamlit as st
 from huggingface_hub import InferenceClient
 from langchain import HuggingFaceHub
 
-# AVATARS
-# av_us = "./man.png"  # "🦖"  #A single emoji, e.g. "🧑‍💻", "🤖", "🦖". Shortcodes are not supported.
-# av_ass = "./robot.png"
-# https://raw.githubusercontent.com/mpazaryna/YourHFChat/main/man.png
-# https://raw.githubusercontent.com/mpazaryna/YourHFChat/main/woman.png
-# https://raw.githubusercontent.com/mpazaryna/YourHFChat/main/robot.png
-
 
 # FUNCTION TO LOG ALL CHAT MESSAGES INTO chathistory.txt
 def writehistory(text):
@@ -24,7 +17,6 @@ def writehistory(text):
 
 
 # Set HF API token
-# yourHFtoken = "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"  # here your HF token
 yourHFtoken = st.secrets["yourHFtoken"]
 repo = "HuggingFaceH4/starchat-beta"
 
